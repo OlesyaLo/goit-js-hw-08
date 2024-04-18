@@ -76,9 +76,7 @@ function handleClickGallery(event) {
     return;
   } else {
     const instance = basicLightbox.create(
-      `<div class="modal">
-      <img  src= "${event.target.dataset.source}" alt= "${event.target.alt}" width="1112" height="640">
-      </div>`,
+      `<img  src= "${event.target.dataset.source}" alt= "${event.target.alt}" width="1112" height="640">`,
       {
         onShow: () => {
           document.addEventListener('keydown', handleEscGallery);
